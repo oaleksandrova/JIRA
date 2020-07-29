@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#SRCTREEWIN-13137] Discount calculator: error message doesn&#39;t contain valid value range when inputting the values exceeding tha range</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira.atlassian.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [SRCTREEWIN-13137]&nbsp;<a href="https://jira.atlassian.com/browse/SRCTREEWIN-13137">Discount calculator: error message doesn&#39;t contain valid value range when inputting the values exceeding tha range</a>
+            <span class="subText">
+               Created: 25/Jul/2020                   &nbsp;Updated: 25/Jul/2020
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Needs Triage</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira.atlassian.com/secure/BrowseProject.jspa?id=14510">Sourcetree for Windows</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                                        <a title="Bitbucket"
+                href="https://jira.atlassian.com/issues/?jql=project%3D14510%20AND%20%22component%22%3D44591%20ORDER%20BY%20priority%20ASC"
+            >Bitbucket</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="3.0.11 - GA Release"
+                href="https://jira.atlassian.com/issues/?jql=project%3D14510%20AND%20%22affectedVersion%22%3D85194%20ORDER%20BY%20priority%20ASC"
+            >3.0.11</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+            <tr>
+            <td><b>Security Level:</b></td>
+            <td>
+                Reporter and Atlassian Staff
+                            </td>
+       </tr>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Low
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="584eb9af7b0c" id="word_reporter_584eb9af7b0c" href="https://jira.atlassian.com/secure/ViewProfile.jspa?name=584eb9af7b0c">Ольга Александрова</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-1599653-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Symptom Severity:</b></td>
+                <td id="customfield_17130-1599653-value" class="value" bgcolor="#ffffff" width="80%">    Severity 3 - Minor
+</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Steps to reproduce:</b></p>
+<ol>
+	<li>Open <a href="https://nibulon.com/data/zakupivlya-silgospprodukcii/kalkulyator-znizhok.html" class="external-link" target="_blank" rel="nofollow noopener">https://nibulon.com/data/zakupivlya-silgospprodukcii/kalkulyator-znizhok.html</a></li>
+	<li>Select any valid values from Delivery Basis and Crop drop-downs (Філія "Кам'янка-Дніпровська" (Запорізька область, Ріпак)</li>
+	<li>Enter any value from the following range into Humidity index: <span class="error">&#91;50,91: 100&#93;</span></li>
+	<li>Enter any value from the following range into Garbage index: <span class="error">&#91;20,91: 100&#93;</span></li>
+</ol>
+
+
+<p><b>Expected result:</b></p>
+<ul>
+	<li>Показник вологості має бути більше базисного значення, але не перевищувати 50,91%</li>
+	<li>Показник сміттєвої домішки має бути більше базисного значення, але не перевищувати 20,91%</li>
+</ul>
+
+
+<p><b>Actual result</b>: the following error messages are displayed for index fields:</p>
+<ul>
+	<li>Введіть показник вологості у %</li>
+	<li>Введіть показник сміттєвої домішки у %</li>
+</ul>
+
+
+<p> </p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Generated at Wed Jul 29 12:25:24 UTC 2020 by Ольга Александрова using Jira 8.5.4#805004-sha1:0444eab799707f9ad7b248d69f858774aadfd250.
+
+</body>
+</html>
